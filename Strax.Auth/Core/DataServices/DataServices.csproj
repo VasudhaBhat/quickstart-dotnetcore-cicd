@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Strax.Business\Contracts\Api.Dtos\Api.Dtos.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Database\Databases.csproj" />
+  </ItemGroup>
+
+</Project>
