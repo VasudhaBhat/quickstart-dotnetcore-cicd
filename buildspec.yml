@@ -3,13 +3,11 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      #- dotnet restore WebApplicationSample/WebApplicationSample.csproj
-      - dotnet restore Strax.Auth/Server/Auth.Server/Auth.Server.csproj
+      - dotnet restore WebApplicationSample/WebApplicationSample.csproj
   build:
     commands:
       - echo Build started on `date`
-      #- dotnet publish -c release -o ./build_output WebApplicationSample/WebApplicationSample.csproj
-      - dotnet publish -c release -o ./build_output Strax.Auth/Server/Auth.Server/Auth.Server.csproj
+      - dotnet publish -c release -o ./build_output WebApplicationSample/WebApplicationSample.csproj
 artifacts:
   files:
     - ./**/*
